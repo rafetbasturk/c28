@@ -49,7 +49,7 @@
             margin: 0;
             &:last-of-type a {
                 margin: 0;
-                border: none;
+                border: 2px solid transparent;
                 background: $pri-soft-red;
                 color: $color-white;
                 &:hover {

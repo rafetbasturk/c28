@@ -16,6 +16,7 @@ body {
   font-family: 'Rubik', sans-serif;
   max-width: 1440px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -209,6 +210,10 @@ main p {
   margin: 0 4rem 3rem;
 }
 
+main a {
+  border: 2px solid transparent;
+}
+
 main a:hover {
   background: none;
   color: #5368df;
@@ -265,8 +270,8 @@ section {
 
 #tabs li a:hover {
   color: #fa5757;
-  -webkit-transform: rotateX(0);
-          transform: rotateX(0);
+  -webkit-transform: none;
+          transform: none;
 }
 
 #tabs .tab-hero {
@@ -295,6 +300,7 @@ section {
 }
 
 #tabs .mobile-more {
+  border: 2px solid transparent;
   display: none;
 }
 
@@ -364,6 +370,7 @@ section {
 
 #download a {
   width: 100%;
+  border: 2px solid transparent;
 }
 
 #download a:hover {
@@ -387,6 +394,7 @@ section {
 .questions a {
   margin-top: 5rem;
   padding: 1.5rem 2.5rem;
+  border: 2px solid transparent;
 }
 
 .questions a:hover {
@@ -506,17 +514,19 @@ form button {
   font-size: 1.5rem;
   color: white;
   background: #fa5757;
-  border: none;
   padding: 1.5rem 0;
   border-radius: 5px;
   margin-top: 1.5rem;
   outline: none;
+  border: 2px solid transparent;
 }
 
 form button:hover {
   background: white;
   color: #fa5757;
   border: 2px solid #fa5757;
+  -webkit-transform: rotateX(30deg);
+          transform: rotateX(30deg);
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -618,7 +628,7 @@ footer .attribution a {
   }
   nav li:last-of-type a {
     margin: 0;
-    border: none;
+    border: 2px solid transparent;
     background: #fa5757;
     color: white;
   }

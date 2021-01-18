@@ -10,6 +10,7 @@ body {
     font-family: 'Rubik', sans-serif;
     max-width: 1440px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -185,6 +186,8 @@ main {
     }
 
     a{
+        border: 2px solid transparent;
+
         &:hover {
             background: none;
             color: $pri-soft-blue;
@@ -240,7 +243,7 @@ section {
             font-size: 1.7rem;
             &:hover {
                 color: $pri-soft-red;
-                transform: rotateX(0);
+                transform: none;
             }
         }
     }
@@ -271,6 +274,7 @@ section {
     }
 
     .mobile-more {
+        border: 2px solid transparent;
         display: none;
         &:hover {
             background: none;
@@ -324,6 +328,7 @@ section {
 
     a {
         width: 100%;
+        border: 2px solid transparent;
 
         &:hover {
             background: none;
@@ -347,6 +352,7 @@ section {
     a {
         margin-top: 5rem;
         padding: 1.5rem 2.5rem;
+        border: 2px solid transparent;
         &:hover {
             background: none;
             color: $pri-soft-blue;
@@ -443,15 +449,16 @@ form {
         font-size: 1.5rem;
         color: $color-white;
         background: $pri-soft-red;
-        border: none;
         padding: 1.5rem 0;
         border-radius: 5px;
         margin-top: 1.5rem;
         outline: none;
+        border: 2px solid transparent;
         &:hover {
             background: white;
             color: $pri-soft-red;
             border: 2px solid $pri-soft-red;
+            transform: rotateX(30deg);
             transition: all .3s ;
         }
     }
