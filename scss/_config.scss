@@ -1,0 +1,29 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+// variables
+
+$pri-soft-blue: hsl(231, 69%, 60%);
+$pri-soft-red: hsl(0, 94%, 66%);
+$grayish-blue: hsl(229, 8%, 60%);
+$v-dark-blue: hsl(229, 31%, 21%);
+$color-white: hsl(0, 100%, 100%);
+
+// responsive
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content; 
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: 1200px) {
+        @content; 
+    }
+}

@@ -1,0 +1,381 @@
+@include tablet {
+    #hamburger-icons {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 8rem;
+        background: none !important;
+
+        #menu {
+            flex: 1 0 30%;
+
+            svg {
+                circle {
+                    fill: #5267DF !important;
+                }
+
+                g path{
+                    fill: #242A45 !important;
+                }
+
+                g g path {
+                    fill: #fff !important;
+                }
+            }
+        }
+    }
+
+    nav {
+        display: block !important;
+        position: unset;
+        width: fit-content;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            width: fit-content;
+            border: none;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            &:last-of-type a {
+                margin: 0;
+                border: none;
+                background: $pri-soft-red;
+                color: $color-white;
+                &:hover {
+                    color: $pri-soft-red;
+                    background: $color-white;
+                    border: 2px solid $pri-soft-red;
+                }
+            }
+        }
+
+        a {
+            color: $v-dark-blue;
+            font-size: 1.3rem;
+            padding: 1.25rem;
+            margin: 0;
+        }
+
+        .social {
+            display: none;
+        }
+    }
+
+    main {
+        padding: 0 8rem;
+
+        img {
+            width: 85%;
+        }
+
+        #main-bg {
+            right: -8rem;
+            padding-top: 45%;
+        }
+    }
+
+    #features {
+        padding: 10rem 8rem 1rem;
+
+        .tab-bg {
+            left: -8rem;
+        }
+    }
+
+    #download {
+        padding: 8.5rem 8rem;
+    }
+
+    .questions {
+        padding: 1.5rem 8rem 12rem;
+    }
+
+    #contact {
+        padding: 7rem 20rem 3.5rem;
+    }
+
+    footer {
+        padding: 4rem 8rem;
+        grid-template-columns: 3fr 7fr;
+        align-items: center;
+        
+        svg {
+            justify-self: start;
+        }
+
+        ul {
+            width: fit-content;
+            justify-self: end;
+        }
+
+        li {
+            display: inline;
+            &:last-of-type a {
+                padding-right: 0;
+            }
+        }
+
+        .social {
+            justify-self: start;
+
+            svg {
+                margin: 0;
+                &:first-of-type {
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+        .attribution {
+            justify-self: end;
+        }
+    }
+}
+
+@include laptop {
+    h1 {
+        font-size: 4.8rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    header {
+        padding: 4.8rem 16.5rem;
+        margin-bottom: 8rem;
+    }
+
+    nav {
+        li {
+            &:last-of-type a {
+                box-shadow: 0 1px 5px rgb(196, 195, 195);
+                margin-left: 2rem;
+            }
+        }
+
+        a {
+            padding: 1.25rem 2.5rem;
+        }
+    }
+
+    main {
+        padding: 0 0 0 16.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        #hero {
+            flex: 1 0 50%;
+            margin: 0;
+        }
+
+        img {
+            width: 95%;
+            position: relative;
+            right: 3rem;
+        }
+
+        #main-bg {
+            width: 74%;
+            padding-top: 52%;
+            right: 0;
+            bottom: -3rem;
+        }
+
+        #main-title {
+            padding-right: 5rem;
+            text-align: left;
+            flex: 1 0 40%;
+        }
+
+        p {
+            margin: 0 0 3rem 0;
+        }
+
+        a {
+            padding: 1.5rem 2.5rem;
+        }
+    }
+
+    #features {
+        padding: 10rem 16.5rem 1rem;
+
+        &-title {
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+    #tabs {
+        ul {
+            border-bottom: 1px solid $grayish-blue;
+            width: fit-content;
+            margin: 0 auto 12rem;
+        }
+
+        li {
+            display: inline-block;
+            width: 270px;
+            border: none;
+
+            &:first-of-type{
+                border: none;
+                
+                a {
+                    padding-bottom: 2.1rem;
+                }
+            }
+
+            a {
+                display: inline-block;
+                width: 270px;
+                padding: 2.5rem 5rem;
+            }
+        }
+
+        .tab-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .tab-hero {
+            flex: 1 0 50%;
+        }
+
+        .tab-bg {
+            left: -16.5rem;
+            width: 115%;
+        }
+
+        img {
+            position: relative;
+            bottom: 4rem;
+        }
+
+        .tab-title {
+            padding: 0 0 6rem 12rem;
+            text-align: left;
+        }
+
+        .tab-content {
+            flex-direction: row;
+        }
+
+        .mobile-more {
+            display: inline-block;
+        }
+
+        a {
+            padding: 1.5rem 2.5rem;
+            &:hover {
+                color: $v-dark-blue;
+                transform: rotate(0);
+            }
+        }
+    }
+
+    #download {
+        padding: 8.5rem 24rem;
+
+        &-title {
+            width: 60%;
+            margin: auto;
+        }
+
+        #card-wrapper {
+            gap: 3rem;
+        }
+
+        .card {
+            &:nth-of-type(2) {
+                margin-top: 4rem;
+            }
+
+            &:nth-of-type(3) {
+                margin-top: 8rem;
+            }
+        }
+    }
+
+    .questions {
+        padding: 5rem 0 12rem;
+        width: 540px;
+        margin: auto;
+    }
+
+    #contact {
+        padding: 7rem 48rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 3.2rem;
+        }
+        
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        div {
+            flex: 1 0 300px;
+            margin-right: 1.5rem;
+        }
+
+        svg {
+            right: 15rem;
+            top: 1.6rem;
+        }
+
+        button {
+            width: 125px;
+            height: 49px;
+            margin: 0;
+        }
+    }
+
+    footer {
+        padding: 4rem 16.5rem;
+        grid-template-columns: 180px 1fr 100px;
+
+        ul {
+            justify-self: flex-start;
+        }
+
+        .social {
+            justify-self: flex-end;
+        }
+
+        .attribution {
+            grid-column: 1 / 4;
+            justify-self: center;
+        }
+    }
+}
