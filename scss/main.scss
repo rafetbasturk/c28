@@ -240,6 +240,7 @@ section {
             font-size: 1.7rem;
             &:hover {
                 color: $pri-soft-red;
+                transform: rotateX(0);
             }
         }
     }

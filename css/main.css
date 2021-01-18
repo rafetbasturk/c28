@@ -265,6 +265,8 @@ section {
 
 #tabs li a:hover {
   color: #fa5757;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
 }
 
 #tabs .tab-hero {
