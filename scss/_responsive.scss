@@ -107,8 +107,11 @@
 
     footer {
         padding: 4rem 8rem;
-        grid-template-columns: 3fr 7fr;
-        align-items: center;
+
+        #footer-wrapper {
+            grid-template-columns: 3fr 7fr;
+            align-items: center;
+        }
         
         svg {
             justify-self: start;
@@ -362,8 +365,12 @@
     }
 
     footer {
-        padding: 4rem 16.5rem;
-        grid-template-columns: 180px 1fr 100px;
+        padding: 4rem 0;
+
+        #footer-wrapper {
+            padding: 0 16.5rem;
+            grid-template-columns: 180px 1fr 100px;
+        }
 
         ul {
             justify-self: flex-start;
